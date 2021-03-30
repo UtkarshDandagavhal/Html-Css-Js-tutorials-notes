@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Listening to Events </title>
+</head>
+<style>
+#btn{
+    padding: 10px 14px;
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+</style>
+<body>
+    <!-- HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.
+
+Here is a list of some common HTML events-
+Here is a list of some common HTML events-
+
+Onchange-  An HTML element has been changed
+Onclick- The user clicks an HTML element
+Onmouseover-   The user moves the mouse over an HTML element
+Onmouseout-The user moves the mouse away from an HTML element
+Onkeydown- The user pushes a keyboard key
+Onload- The browser has finished loading the page -->
+
+<div class="container">
+    <h1>This is heading</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint optio modi cumque dolorem saepe et ad aliquam quo id at, magnam eligendi doloribus maxime voluptatem voluptatibus veritatis recusandae totam placeat dignissimos deserunt ipsam tempore delectus incidunt quasi. Aliquid sequi velit eaque id libero corrupti, reprehenderit eius, quidem voluptas cum modi praesentium. Facere ex nihil, expedita sequi, distinctio eligendi reiciendis, necessitatibus reprehenderit ea saepe aut quam quas facilis ullam voluptatibus nostrum obcaecati iure ratione quae esse beatae ipsum minima iusto odit? Nam soluta officia a quam. Ratione corporis, reprehenderit quaerat deleniti reiciendis rem facilis, odit beatae fugiat ipsum delectus, illum nemo natus. Dolore accusamus eveniet explicabo optio? Obcaecati optio iusto nostrum. Aliquid debitis, voluptas culpa inventore optio nihil facere quae mollitia odit obcaecati similique recusandae possimus excepturi quod expedita nulla, ipsum cupiditate dolores saepe sed enim? Corporis animi nihil temporibus alias numquam exercitationem excepturi fuga, officia error provident optio minus veritatis adipisci, nemo vel rerum voluptates totam nam aspernatur. Nulla quis itaque mollitia numquam, a tempore nostrum repellendus voluptas sequi ipsa modi unde quidem accusantium fugit exercitationem at soluta quia quasi reprehenderit provident vero sit architecto. Molestiae ea, temporibus quasi in aut quis repellat sed, dolor ullam qui velit exercitationem quas provident cumque eum magnam? Atque quo alias in quibusdam, distinctio minima magnam ex! Saepe ut rerum consequuntur voluptate eveniet perspiciatis. Odio, ea ipsa dolore reiciendis cumque optio assumenda facere nemo sed! Dicta, cupiditate.</p>
+</div>
+<button id="btn" onclick="toogleHide()">Show/hide</button>
+
+<script>
+    function toogleHide(){
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        if (para.style.display != 'none'){
+            para.style.display = 'none';
+        }
+        else{
+            para.style.display = 'block';
+        }
+    }
+
+    // In the same way, there is another event listener known as a mouseover. For example, if we want to alert when the mouse pointer is on the paragraph, then we can write the code as follows-
+
+    let para = document.getElementById('para');
+    //     para.addEventListener('mouseover',function run(){
+    //         alert('mouse inside')
+    //     })
+
+    para.addEventListener('mouseout',function run(){
+        alert('mouse outside')
+    })
+
+</script>
+
+</body>
+</html>

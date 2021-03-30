@@ -1,0 +1,73 @@
+<!-- Box Shadow and Text Shadow -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow and Text Shadow</title>
+    ,
+    <style>
+      .container {
+        display: flex;
+      }
+      .card {
+        margin: 23px 12px;
+        padding: 23px 12px;
+        border: 2px solid green;
+        background-color: mediumseagreen;
+
+        /* box-shadow: offset-x offset-y color; */
+        /* x = horizantal
+        y = vertical */
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: offset-x ,offset-y, blur-radius ,spread-radius ,color; */
+
+        /* box-shadow: 10px 13px yellow; */
+        /* box-shadow: -10 -15 yellow; */
+        /* box-shadow: 7px 5px 10px red; */
+        /* box-shadow: -7px -5px 10px red; */
+        /* box-shadow: -7px -5px 10px 34px red;  */
+        /* box-shadow: -7px -5px 10px 34px rgba(71, 172, 172, 0.5);  */
+        box-shadow: inset 3px 5px red;
+        box-shadow: 3px 5px green, 4px 6px red;
+      }
+      .card h2 {
+        /* text-shadow: 3px 4px red; */
+        /* text-shadow: 3px 2px 2px white; */
+        text-shadow: -3px -2px 2px white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="card-1">
+        <h2>This is C++ cource</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fuga rem
+          doloremque illum obcaecati eligendi! Accusamus at adipisci sint harum
+          aliquam in fugit, ipsum autem, libero sed molestiae ab architecto,
+          quibusdam omnis quam obcaecati voluptates!
+        </p>
+      </div>
+      <div class="card" id="card-2">
+        <h2>This is HTML cource</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+          tempore voluptate molestias sit soluta eum animi, ea quibusdam odit
+          sint, accusamus repellat eaque. Eaque qui ullam, fugit dignissimos
+          illo quasi labore repellat nostrum veniam similique.
+        </p>
+      </div>
+      <div class="card" id="card-3">
+        <h2>This is Java cource</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, modi
+          eligendi adipisci odit, officiis incidunt voluptates repudiandae eaque
+          obcaecati culpa deleniti a excepturi labore ducimus placeat ut, quo
+          temporibus tenetur saepe accusamus ad et accusantium!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

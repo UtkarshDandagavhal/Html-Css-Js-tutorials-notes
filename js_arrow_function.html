@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arrow Functions</title>
+  </head>
+  <body>
+    <div class="container">This is arrow functions tutorial.</div>
+    <script>
+      // Let us understand by example. If we simply write the below JavaScript-
+      // function greet() {
+      //     console.log('Good morning');
+      // }
+
+      //   But if we write the same function with the help of arrow functions then our work will reduce as follows-
+
+      // Arrow function
+      // let greet =  ()=> {
+      //     console.log('Good morning');
+      // }
+
+      let greet = () => console.log("Good morning");
+
+      // let sum2 = (a, b)=>{
+      //     return a+b;
+      // };
+
+      // We can also simply add the two numbers with the arrow functions as follows-
+
+      let sum2 = (a, b) => a + b;
+
+      // If we have any single variable in our code, then we don’t need to put any braces also. The example for this is as follows-
+      // Half any number
+      let half = (a) => a / 2;
+
+      // We will get the same output as the above after executing this code. This function can also be used with the setTimeout() function as follows-
+
+      greet();
+      setTimeout(() => {
+        console.log("We are inside settimeout");
+      }, 3000);
+
+      // In the above example, we have made a speak function, add a forEach() loop to it, and then added an arrow function. But if we add a variable greeting and add this.greeting inside the console.log as follows-
+
+      let obj1 = {
+        greeting: "Good Morning",
+        names: ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+        speak() {
+          this.names.forEach((student) => {
+            console.log(this.greeting + " Kukdoo Koo " + student);
+          });
+        },
+      };
+      obj1.speak();
+    </script>
+  </body>
+</html>

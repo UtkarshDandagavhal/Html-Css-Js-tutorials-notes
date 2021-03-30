@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for, while, forEach, Do While Loops</title>
+  </head>
+  <body>
+    <div class="container">This is Loops</div>
+
+    <script>
+      // Let us start by understanding for loops. It loops through a block of code a number of times.  If we write the code as follows-
+
+      //   i = 0;
+      //   for (let i = 0; i < 3; i++) {
+      //     console.log(i);
+      //   }
+
+      //   Let us now see how to use for loop to iterate an array. If we write the code as follows-
+
+      let friends = ["Rohan", "sagar", "vasim", "rudra", "gokul", "rushi"];
+      for (let index = 0; index < friends.length; index++) {
+        console.log("Hello friends," + friends[index]);
+      }
+
+      // However, there is another simpler way to write the same loop with the help of forEach. It is written as follows-
+      friends.forEach(function f(element) {
+        console.log("Hello Friends, " + element + " to modern javascript");
+      });
+
+      // There is one more way of writing it using for/of loops. It loops through the values of an iterable object. It is written as follows-
+
+      for (element of friends) {
+        console.log("Hello friends, " + element + " to modern javascript");
+      }
+
+      //   To iterate through an object, we can use for/in loops. Let us understand with the example below-
+
+      let employe = {
+        name: "utkarsh",
+        salary: 2,
+        chaneel: "coding adda",
+      };
+      // Use this loop to iterate over objects in JavaScript
+      for (key in employe) {
+        console.log(`The ${key} of employe is ${employe[key]}`);
+      }
+      //   while loops
+      //   Now we will see how to use while loops in JavaScript. The while loop loops through a block of code as long as a specified condition is true. The syntax is as follows-
+
+      let i = 0;
+      while (i < 4) {
+        console.log(`${i} is less then 4`);
+        i++;
+      }
+
+      // do while loop
+      //   There is another loop known as do-while loops. It is a variant of the while loop. It will execute the code block once, before checking the condition, then it will repeat the loops as long as the condition is true. The example is as follows-
+
+      let j = 34;
+      do {
+        console.log(`${j} is less then 4 and write inside do while loop`);
+        j++;
+      } while (j < 4);
+    </script>
+  </body>
+</html>

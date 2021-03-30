@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Layouts Using Grid Template Area</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+      }
+      .box {
+        border: 2px solid rgb(7, 7, 7);
+        background-color: rgb(119, 184, 201);
+        padding: 12px 32px;
+      }
+      #navbar {
+        grid-area: navbar;
+      }
+      #section {
+        grid-area: section;
+      }
+      #aside {
+        grid-area: aside;
+      }
+      #footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="navbar" class="box">Home About Conatact us</div>
+      <div id="section" class="box">
+          <h1>Blog</h1>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni beatae
+        placeat obcaecati maxime harum debitis tempora doloribus sequi
+        praesentium quos neque porro quaerat, officiis, iusto sed deleniti amet
+        perferendis nulla animi ut, adipisci nemo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. At laborum officiis minus inventore voluptate quidem officia dolor unde natus quam. Earum delectus hic, fugit soluta alias iusto impedit illo unde veniam voluptatem aliquam distinctio saepe a praesentium cumque dolorum in ea tempora quae necessitatibus facilis ullam minus debitis! Qui nesciunt at corporis aut, distinctio doloribus eaque sit eligendi, aperiam tempora excepturi, vero vitae voluptatum. Illo eum velit mollitia esse tempora temporibus molestias consectetur. Officia quas nesciunt libero nulla saepe dolorum, cum labore eius cupiditate id voluptatem quod. Quis, consequatur beatae distinctio, maxime culpa labore quasi vel perspiciatis eum a repellendus eos ipsam voluptas, recusandae facere quia fugiat perferendis rerum quae Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat aliquam, deserunt voluptas est corporis ullam voluptatibus tenetur laboriosam nemo rerum ad tempora inventore voluptatem dolores recusandae error? Impedit autem voluptates sunt, aut fugit facilis assumenda quidem ad alias molestias. Similique vitae distinctio nam commodi animi unde incidunt nihil provident, eligendi expedita minima veniam. Non esse animi dolores recusandae eius blanditiis quod perferendis sint. Fuga neque eum consequuntur vel voluptas sequi! Numquam beatae vel itaque ad recusandae ullam sapiente similique? Velit labore aliquid nostrum necessitatibus incidunt qui non corporis tempore accusamus cumque architecto inventore assumenda nisi, dignissimos rerum sed libero fugiat harum nesciunt sit expedita praesentium saepe. Debitis reiciendis numquam labore.
+      </div>
+
+      <div id="aside" class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, error
+        architecto necessitatibus accusantium perspiciatis et doloremque ex
+        corporis aut sapiente neque fugit eligendi tempora cupiditate id vitae
+        pariatur culpa totam, exercitationem velit? Odio blanditiis voluptatem
+        voluptatibus labore. Sapiente, voluptatum pariatur.
+      </div>
+      <footer class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laboriosam quis iure.</footer>
+      <!-- <div class="box">item-1</div>
+      <div class="box">item-2</div>
+      <div class="box">item-3</div>
+      <div class="box">item-4</div>
+      <div class="box">item-5</div>
+      <div class="box">item-6</div>
+      <div class="box">item-7</div>
+      <div class="box">item-8</div>
+      <div class="box">item-9</div>
+      <div class="box">item-10</div>
+      <div class="box">item-11</div>
+      <div class="box">item-12</div> -->
+    </div>
+  </body>
+</html>

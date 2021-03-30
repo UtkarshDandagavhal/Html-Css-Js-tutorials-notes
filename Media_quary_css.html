@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Quary</title>
+    <style>
+      .box {
+        font-size: 72px;
+        color: white;
+        background-color: red;
+        text-align: center;
+        display: none;
+      }
+      /* @media: A media query always starts with @media.
+         Screen: It is the applicable media type.
+         max-width: It is the media feature. 
+         #contents{width:90%} : It is the CSS to be applied when the conditions are met. */
+
+      @media only screen and (max-width: 300px) {
+        #box-1 {
+          display: block;
+          background-color: aqua;
+        }
+      }
+      @media only screen and (min-width: 300px) and (max-width: 500px) {
+        #box-2 {
+          display: block;
+          background-color: red;
+        }
+      }
+      @media (min-width: 500px) and (max-width: 800px) {
+        #box-3 {
+          display: block;
+          background-color: darkgreen;
+        }
+      }
+      @media (min-width: 800px) {
+        #box-4 {
+          display: block;
+          background-color: chartreuse;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box-1">i am iphone</div>
+    <div class="box" id="box-2">i am tablet</div>
+    <div class="box" id="box-3">i am computer screen</div>
+    <div class="box" id="box-4">i am wid screen</div>
+  </body>
+</html>

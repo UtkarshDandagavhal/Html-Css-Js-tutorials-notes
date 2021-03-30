@@ -1,0 +1,63 @@
+<!-- String Functions in JavaScript  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript String Functions</title>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      var str = "This is a String";
+      console.log(str);
+
+      // First occurrence of a substring
+      // Suppose we want to locate the position of any word in the string
+      var postion = str.indexOf("is");
+      console.log(postion);
+
+      // Last occurence of a substring
+      // To get the position of the last substring, we can use the function lastIndexOf() as follows-
+      var postion = str.lastIndexOf("is");
+      console.log(postion);
+
+      // To get a substring from a string we can use the slice() function as follows-
+
+      // var substr = str.slice(1,7);
+      // var substr1 = str.slice(1, 3);
+      // console.log(substr1)
+
+      // We can also replace a particular string to another string with the help of replace() function as follows-
+      var str3 = "Visit Microsoft!";
+      var res = str3.replace("Microsoft", "W3Schools");
+      console.log(res);
+
+      var replace = str.replace("string", "harry");
+      console.log(str);
+      console.log(replace);
+
+      // We can also convert the whole strong to an uppercase or low7ercase letters as shown below-
+
+      console.log(str.toUpperCase());
+      console.log(str.toLowerCase());
+
+      // To concat any two strings, we can take the help of concat() function as follows-
+
+      var Newstring = str.concat("Newstring");
+      console.log(Newstring);
+
+      // To remove all the white spaces in the string, we can use trim() function as shown below-
+
+      var strwhitespaces = "  this contain     whitespaces   ";
+      console.log(strwhitespaces);
+      console.log(strwhitespaces.trim());
+
+      // To extract any character from a string, we can use charAt() function as follows-
+
+      var char2 = str.charAt(2);
+      console.log(char2);
+    </script>
+  </body>
+</html>

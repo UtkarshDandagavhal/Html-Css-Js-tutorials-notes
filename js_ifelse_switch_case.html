@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope If-else Conditionals & Switch Case in JavaScript</title>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+      </ul>
+    </div>
+    <script>
+      var string1 = "This is String";
+      console.log(string1);
+
+      var string1 = "This is String1";        
+      console.log(string1);
+
+
+    //   So here, we have noticed that the value of the variable gets easily changed and it can create a problem if we do not remember the initial value given the variable. It is because the scope of var is global here. But if we declare the var inside any function, then its scope will remain under that function. 
+
+      let a = "u";
+      {
+        let a = "u6";
+        console.log(a);
+      }
+
+      console.log(a);
+
+      const a1 = "This is constant";
+      //   a1 = "i want to change this this cannot be changed";
+      console.log(a1);
+
+      //   Now let us move towards conditional statements. If we write the code as follows-
+
+      let age = 5;
+      if (age > 18) {
+        console.log("you can drink alchol");
+      } else if (age == 2) {
+        console.log("age is 2");
+      } else if (age == 5) {
+        console.log("age is 5");
+      } else {
+        console.log("you can drink alchol");
+      }
+
+      //   Let us now understand switch-case statements. If we write as follows-
+
+      const cups = 47;
+      switch (cups) {
+        case 4:
+          console.log("The value of cup is 4");
+          break;
+
+        case 47:
+          console.log("The value of cup is 47");
+          break;
+
+        case 40:
+          console.log("The value of cup is 40");
+          break;
+
+        case 48:
+          console.log("The value of cup is 48");
+          break;
+
+        default:
+          console.log("The value of cup is 4,47,40,48");
+          break;
+      }
+    </script>
+  </body>
+</html>

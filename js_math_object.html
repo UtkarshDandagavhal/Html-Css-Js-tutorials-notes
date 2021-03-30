@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math object</title>
+  </head>
+  <body>
+    <script>
+      // then we will get the list of all those Math functions that are used in JavaScript.
+      //   let m = Math;
+      //   console.log(m);
+
+      //   Let us now print the values of some constants using the Math functions.
+
+      console.log("The value of Math.E is", Math.E);
+      console.log("The value of Math.LN2 is", Math.LN2);
+      console.log("The value of Math.LN10 is", Math.LN10);
+      console.log("The value of Math.PI is", Math.PI);
+      console.log("The value of Math.SQRT1_2 is", Math.SQRT1_2);
+      console.log("The value of Math.LOG2E is", Math.LOG2E);
+
+      //   Now let us see how to print the functions with the help of Math Object. Here we will initialize two variables and then call them under different functions as follows-
+
+      let a = 34.5;
+      let b = 62;
+
+      //   Math.round is used to round the values to the nearest integer
+
+      console.log("The value of a and b is", a, b);
+      console.log(
+        "The value of a and b rounded is",
+        Math.round(a),
+        Math.round(b)
+      );
+
+      //   Then there are Math.pow() and Math.sqrt() functions that are used to return the power and square root of any number respectively.
+
+      console.log("The value of pow is", Math.pow(2, 5));
+
+      console.log("The value of squart is", Math.sqrt(9));
+
+      //   There are other functions like ceil and floor. Ceil is used to round up the number to the nearest integer whereas floor is used to round down to the nearest integer.
+
+      console.log("5.8 round up to nearest value", Math.ceil(5.8));
+
+      console.log("5.8 round up to nearest value", Math.floor(5.8));
+
+      // Trinonometric Functions
+
+      console.log("The value of sin(pi) is", Math.sin(Math.PI / 2));
+      console.log("The value of cos(pi) is", Math.cos(Math.PI / 2));
+      console.log("The value of tan(pi) is", Math.tan(Math.PI / 2));
+
+      //   We can take the help of min and max functions to find the minimum and maximum numbers respectively.
+
+      console.log("The Maximum Value in 4 ,5 ,6 is", Math.max(4, 5, 6));
+      console.log("The Maximum Value in 4 ,5 ,6 is", Math.min(4, 5, 6));
+
+      //   Let us now see how to generate random numbers in JavaScript. We use Math.random() to generate any random number as follows-
+
+      let r = Math.random();
+      console.log("The random Number is", r);
+
+      // But to generate a random number between a and b, we can use this particular formula and write as follows-
+
+      let a1 = 50;
+      let b1 = 60;
+      let r50_60 = a1 + (b1 - a1) * Math.random();
+      console.log("The random number between a and b is", r50_60);
+    </script>
+  </body>
+</html>
